@@ -9,7 +9,7 @@
 		return Controller.extend("sapui5test.controller.View1", {
 
 			onShowHello : function () {
-				MessageToast.show("Hello World");
+				MessageToast.show("That doesn't do anything, does it?");
 			},
 
 			onInit : function () {
@@ -20,7 +20,6 @@
 
 				this.getView().setModel(oModel);
 			},
-=======
 
 			onCallAPI : function () {
 
@@ -32,16 +31,8 @@
 					success : this.successAPI.bind(this)
 
 				});
-				//this.successAPI(this);
-
 			},
-			errorAPI : function (error){
-				debugger;
-			},
-
-			successAPI : function (data) {
-
-				var Jokes = data;
+			successAPI : function (Jokes) {
 
 				var oModel = new JSONModel();
 				oModel.setData({

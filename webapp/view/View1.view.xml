@@ -23,7 +23,7 @@
 						text="Get Joke"
 						press="onCallAPI"
 						class="sapUiSmallMargin"/>
-					<List id="restdata"/>
+					<List id="restdata"  />
 					
 					
 					</content>
