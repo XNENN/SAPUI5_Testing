@@ -7,9 +7,11 @@
 		"use strict";
 
 		return Controller.extend("sapui5test.controller.View1", {
+
 			onShowHello : function () {
 				MessageToast.show("Hello World");
 			},
+
 			onInit : function () {
 				// set mock model
 				var sPath = sap.ui.require.toUrl('../data/data.json'),
@@ -17,6 +19,55 @@
 	
 				this.getView().setModel(oModel);
 			},
+<<<<<<< Updated upstream
+=======
+			
+			onCallAPI : function () {
+				
+				$.ajax({
+					type: "GET",
+					url: "https://sv443.net/jokeapi/v2/joke/any?format=json",
+					contentType: "application/json",
+					dataType : "json",
+					success : this.successAPI.bind(this)	
+				});
+				//this.successAPI(this);
+
+			},
+			errorAPI : function (error){
+				debugger;
+			},
+
+			successAPI : function (data) {
+				
+				var Jokes = data;
+				
+				var oModel = new JSONModel();
+				oModel.setData({
+					"myJokes": [Jokes]
+				});
+				var oList = this.getView().byId("restdata");
+
+				oList.setModel(oModel);
+				if(Jokes.type == "twopart"){
+				oList.bindItems({
+					path: "/myJokes",
+					template: new sap.m.DisplayListItem({
+						label: "{category}",
+						value: "{setup} {delivery}"
+					}) 
+				}); 
+			} else {
+				oList.bindItems({
+					path: "/myJokes",
+					template: new sap.m.DisplayListItem({
+						label: "{category}",
+						value: "{joke}"
+					}) 
+				}); 
+			}
+			},
+>>>>>>> Stashed changes
 	
 			handleEditPress : function (oEvent) {
 				var oTileContainer = this.byId("container"),
