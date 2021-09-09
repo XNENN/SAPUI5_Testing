@@ -67,6 +67,15 @@
         }
       ]
     },
+    "config": {
+			"sample": {
+				"files": [
+					"View1.view.xml",
+					"View1.controller.js",
+					"manifest.json"
+				]
+			}
+		},
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",

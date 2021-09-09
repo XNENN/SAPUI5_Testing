@@ -2,8 +2,9 @@
 	sap.ui.define([
 		"sap/ui/core/mvc/Controller",
 		"sap/m/MessageToast",
+		"sap/m/MessageBox",
 		'sap/ui/model/json/JSONModel'
-	], function (Controller, MessageToast, JSONModel) {
+	], function (Controller,  MessageToast, MessageBox, JSONModel) {
 		"use strict";
 
 		return Controller.extend("sapui5test.controller.View1", {
@@ -19,6 +20,7 @@
 				oModel = new JSONModel(sPath);
 
 				this.getView().setModel(oModel);
+				debugger;
 			},
 
 			onCallAPI : function () {
@@ -58,6 +60,9 @@
 					})
 				});
 			}
+			},
+			onInfoMessageBoxPress: function () {
+				MessageBox.information("");
 			},
 
 			handleEditPress : function (oEvent) {

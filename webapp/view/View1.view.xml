@@ -14,7 +14,7 @@
 						id="helloButton"
 						type="Emphasized"
 						icon="sap-icon://alert"
-						text="SAPUI5"
+						text="ALERT"
 						press="onShowHello"
 						class="sapUiSmallMargin"/>
 
@@ -23,8 +23,14 @@
 						text="Get Joke"
 						press="onCallAPI"
 						class="sapUiSmallMargin"/>
-					<List id="restdata"  />
 					
+					<Button
+						text="Pop-up"
+						icon="sap-icon://hint"
+						class="sapUiSmallMargin"
+						press=".onInfoMessageBoxPress"
+						 />
+					<List id="restdata"  />
 					
 					</content>
 						<TileContainer
