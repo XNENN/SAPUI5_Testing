@@ -2,8 +2,7 @@
     controllerName="sapui5test.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
-    xmlns="sap.m"
->
+    xmlns="sap.m">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
@@ -25,20 +24,12 @@
 						class="sapUiSmallMargin"/>
 					<List id="restdata"/>
 					
-					
+					 <mvc:XMLView viewName="sapui5test.view.ProcessFlow"/>
+
 					</content>
-					
-		
-		<footer>
-			<Toolbar>
-				<ToolbarSpacer/>
-					<Button text="Edit" press="handleEditPress" />
-					<Button text="Busy state" press="handleBusyPress" />
-				<ToolbarSpacer/>
-			</Toolbar>
-		</footer>
 				</Page>
 			</pages>
+			
 		</App>
 	</Shell>
 </mvc:View>
