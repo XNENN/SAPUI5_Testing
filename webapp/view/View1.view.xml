@@ -27,19 +27,7 @@
 					
 					
 					</content>
-						<TileContainer
-			id="container"
-			tileDelete="handleTileDelete"
-			tiles="{/TileCollection}">
-	<StandardTile
-				icon="{icon}"
-				type="{type}"
-				number="{number}"
-				numberUnit="{numberUnit}"
-				title="{title}"
-				info="{info}"
-				infoState="{infoState}" />
-		</TileContainer>
+					
 		
 		<footer>
 			<Toolbar>
