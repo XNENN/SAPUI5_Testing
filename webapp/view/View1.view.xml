@@ -2,8 +2,7 @@
     controllerName="sapui5test.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
-    xmlns="sap.m"
->
+    xmlns="sap.m">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
@@ -23,7 +22,7 @@
 						text="Get Joke"
 						press="onCallAPI"
 						class="sapUiSmallMargin"/>
-					
+
 					<Button
 						text="Pop-up"
 						icon="sap-icon://hint"
@@ -35,30 +34,9 @@
 					 <mvc:XMLView viewName="sapui5test.view.ProcessFlow"/>
 
 					</content>
-						<TileContainer
-			id="container"
-			tileDelete="handleTileDelete"
-			tiles="{/TileCollection}">
-	<StandardTile
-				icon="{icon}"
-				type="{type}"
-				number="{number}"
-				numberUnit="{numberUnit}"
-				title="{title}"
-				info="{info}"
-				infoState="{infoState}" />
-		</TileContainer>
-		
-		<footer>
-			<Toolbar>
-				<ToolbarSpacer/>
-					<Button text="Edit" press="handleEditPress" />
-					<Button text="Busy state" press="handleBusyPress" />
-				<ToolbarSpacer/>
-			</Toolbar>
-		</footer>
 				</Page>
 			</pages>
+
 		</App>
 	</Shell>
 </mvc:View>

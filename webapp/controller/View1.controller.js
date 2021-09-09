@@ -81,9 +81,5 @@
 				oEvent.getSource().setText(bBusy ? "Done" : "Busy state");
 			},
 
-			handleTileDelete : function (oEvent) {
-				var oTile = oEvent.getParameter("tile");
-				oEvent.getSource().removeTile(oTile);
-			}
 		});
 	});
