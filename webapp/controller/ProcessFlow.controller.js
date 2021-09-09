@@ -13,17 +13,8 @@ sap.ui.define(['sap/suite/ui/commons/library', 'sap/ui/core/mvc/Controller', 'sa
 			oModelPf1.attachRequestCompleted(this.oProcessFlow1.updateModel.bind(this.oProcessFlow1));
 		},
 
-		onOnError: function(event) {
-			MessageToast.show("Exception occurred: " + event.getParameters().text);
-		},
-
-		onHeaderPress: function(event) {
-			var sDataPath = sap.ui.require.toUrl("sap/suite/ui/commons/sample/ProcessFlow/ProcessFlowNodes.json");
-			this.getView().getModel("pf2").loadData(sDataPath);
-		},
-
 		onNodePress: function(event) {
-			MessageToast.show("Node " + event.getParameters().getNodeId() + " has been clicked.");
+			MessageToast.show(event.getParameters().getTexts());
 		},
 
 		onZoomIn: function () {

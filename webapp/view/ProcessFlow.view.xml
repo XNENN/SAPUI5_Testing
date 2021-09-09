@@ -4,7 +4,7 @@
 	xmlns="sap.suite.ui.commons"
 	controllerName="sapui5test.controller.ProcessFlow">
 	<m:Panel>
-		<m:Label text="Process Flow sample - zooming buttons and highlighted items" />
+		<m:Label text="Basic Github Process Flow" />
 		<m:HBox renderType="Bare">
 			<m:Button text="Zoom In" press="onZoomIn" />
 			<m:Button text="Zoom Out" press="onZoomOut" />

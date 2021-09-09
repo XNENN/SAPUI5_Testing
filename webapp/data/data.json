@@ -3,172 +3,128 @@
 		{
 			"id": "1",
 			"lane": "0",
-			"title": "Sales Order 1",
+			"title": "initial Commit",
 			"titleAbbreviation": "SO 1",
-			"children": [ 10, 11, 12 ],
+			"children": [ 10 ],
 			"state": "Positive",
-			"stateText": "OK status",
+			"stateText": "created",
 			"focused": true,
 			"highlighted": false,
-			"texts": [ "Sales Order Document Overdue long text for the wrap up all the aspects", "Not cleared" ]
+			"texts": [ "Github Repo is being initiated ","it can either be cloned or created" ]
 		}, {
 			"id": "10",
 			"lane": "1",
-			"title": "Outbound Delivery 40",
+			"title": "first Commit",
 			"titleAbbreviation": "OD 40",
 			"children": [ 20, 21 ],
-			"state": "Negative",
-			"stateText": "NOT OK",
+			"state": "Critical",
+			"stateText": "committed",
 			"focused": false,
 			"highlighted": false,
-			"texts": [ "text 1", "text 2" ]
-		}, {
-			"id": "11",
-			"lane": "1",
-			"title": "Outbound Delivery 43",
-			"titleAbbreviation": "OD 43",
-			"children": [ 20 ],
-			"state": "Neutral",
-			"stateText": null,
-			"focused": false,
-			"highlighted": false,
-			"texts": [ "text 1", "text 2" ]
-		}, {
-			"id": "12",
-			"lane": "1",
-			"title": "Outbound Delivery 45",
-			"titleAbbreviation": "OD 45",
-			"children": [ 20 ],
-			"state": "Neutral",
-			"stateText": null,
-			"focused": false,
-			"highlighted": false,
-			"texts": null
-		}, {
+			"texts": [ "new Version was committed", "the Version changed to 1.1" ]
+		},  {
 			"id": "20",
 			"lane": "2",
-			"title": "Invoice 9",
+			"title": "new branch created",
 			"titleAbbreviation": "I 9",
-			"children": [ 30, 31 ],
+			"children": [ 30 ],
 			"state": "Positive",
-			"stateText": "OK status",
+			"stateText": "branch",
 			"focused": false,
 			"highlighted": false,
-			"texts": null
+			"texts":  "new branch created with the Version 1.1"
 		}, {
 			"id": "21",
 			"lane": "2",
-			"title": "Invoice Planned",
+			"title": "main branch",
 			"titleAbbreviation": "IP",
-			"children": null,
-			"state": "PlannedNegative",
+			"children": [ 51 ],
+			"state": "Planned",
 			"stateText": null,
 			"focused": false,
 			"highlighted": false,
-			"texts": null
+			"texts": ["main branch still on Version 1.1"]
 		}, {
 			"id": "30",
 			"lane": "3",
-			"title": "Accounting Document 5",
+			"title": "new Commit",
 			"titleAbbreviation": "AD 5",
-			"children": [ 51 ],
-			"state": "Critical",
-			"stateText": "AD Issue",
-			"focused": false,
-			"highlighted": false,
-			"texts": null
-		}, {
-			"id": "31",
-			"lane": "3",
-			"title": "Accounting Document 7",
-			"titleAbbreviation": "AD 7",
 			"children": [ 41 ],
-			"state": "Positive",
-			"stateText": "OK status",
+			"state": "Critical",
+			"stateText": "committed",
 			"focused": false,
 			"highlighted": false,
-			"texts": null
+			"texts": ["new Version on side branch", "Version 1.2"]
 		}, {
 			"id": "41",
 			"lane": "4",
-			"title": "Payment Document 75",
-			"titleAbbreviation": "PD 75",
+			"title": "new Commit",
+			"titleAbbreviation": "AD 5",
 			"children": [ 51 ],
-			"state": "Positive",
-			"stateText": "OK status",
+			"state": "Critical",
+			"stateText": "committed",
 			"focused": false,
 			"highlighted": false,
-			"texts": null
+			"texts": ["new Version on side branch", "Version 1.3"]
 		}, {
 			"id": "51",
 			"lane": "5",
-			"title": "Acceptance Letter 14",
+			"title": "Branches merged",
 			"titleAbbreviation": "AL 14",
 			"children": [ 61 ],
-			"state": "Positive",
-			"stateText": "OK status",
+			"state": "Negative",
+			"stateText": "merged",
 			"focused": false,
 			"highlighted": false,
-			"texts": null
+			"texts": [ "new main Version 1.3", "stops side branch"]
 		}, {
 			"id": "61",
 			"lane": "6",
 			"title": "Credit Voucher 67",
-			"titleAbbreviation": "CV 67",
-			"children": [ 71 ],
-			"state": "Positive",
+			"titleAbbreviation": "continues",
+			"children": [  ],
+			"state": "Planned",
 			"stateText": "OK status",
 			"focused": false,
 			"highlighted": false,
-			"texts": null
-		}, {
-			"id": "71",
-			"lane": "6",
-			"title": "Credit Return 77",
-			"titleAbbreviation": "CR 77",
-			"children": null,
-			"state": "Planned",
-			"stateText": "Planned status text",
-			"focused": false,
-			"highlighted": false,
-			"texts": null
+			"texts": [ "go on and do create your own Github Repo"]
 		}
 	],
 	"lanes": [
 		{
 			"id": "0",
-			"icon": "sap-icon://order-status",
-			"label": "Order Processing",
+			"icon": "sap-icon://initiative",
+			"label": "initial Commit",
 			"position": 0
 		}, {
 			"id": "1",
-			"icon": "sap-icon://monitor-payments",
-			"label": "Delivery Processing",
+			"icon": "sap-icon://command-line-interfaces",
+			"label": "first Commit",
 			"position": 1
 		}, {
 			"id": "2",
-			"icon": "sap-icon://payment-approval",
-			"label": "Invoicing",
+			"icon": "sap-icon://add-process",
+			"label": "new Branch",
 			"position": 2
 		}, {
 			"id": "3",
-			"icon": "sap-icon://money-bills",
-			"label": "Accounting",
+			"icon": "sap-icon://command-line-interfaces",
+			"label": "new Commit",
 			"position": 3
 		}, {
 			"id": "4",
-			"icon": "sap-icon://payment-approval",
-			"label": "Payment Processing",
+			"icon": "sap-icon://command-line-interfaces",
+			"label": "new Branch",
 			"position": 4
 		}, {
 			"id": "5",
-			"icon": "sap-icon://nurse",
-			"label": "Receipt Processing",
+			"icon": "sap-icon://journey-change",
+			"label": "branch Merge",
 			"position": 5
 		}, {
 			"id": "6",
-			"icon": "sap-icon://retail-store",
-			"label": "Return Processing",
+			"icon": "sap-icon://step",
+			"label": "continues",
 			"position": 6
 		}
 	]
