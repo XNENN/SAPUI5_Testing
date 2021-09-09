@@ -31,7 +31,9 @@
 						press=".onInfoMessageBoxPress"
 						 />
 					<List id="restdata"  />
-					
+
+					 <mvc:XMLView viewName="sapui5test.view.ProcessFlow"/>
+
 					</content>
 						<TileContainer
 			id="container"
