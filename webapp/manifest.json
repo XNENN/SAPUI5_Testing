@@ -11,8 +11,19 @@
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
     "resources": "resources.json",
-    "ach": "ach"
+    "ach": "ach",
+    "dataSources": {
+      "ES5": {
+        "uri": "/sap/opu/odata/IWBEP/GWSAMPLE_BASIC/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    }
   },
+  
+
   "sap.ui": {
     "technology": "UI5",
     "icons": {
@@ -59,7 +70,11 @@
         "settings": {
           "bundleName": "sapui5test.i18n.i18n"
         }
+      },
+      "" : {
+        "dataSource": "ES5"
       }
+  
     },
     "resources": {
       "css": [

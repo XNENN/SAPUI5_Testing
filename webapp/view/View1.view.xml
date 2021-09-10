@@ -6,6 +6,7 @@
 	<Shell id="shell">
 		<App id="app">
 			<pages>
+
 				<Page id="page" title="{i18n>title}">
 					<content>
 					<Title text="{/joke}"></Title>
@@ -30,9 +31,13 @@
 						press=".onInfoMessageBoxPress"
 						 />
 					<List id="restdata"  />
+					
 
 					 <mvc:XMLView viewName="sapui5test.view.ProcessFlow"/>
+					 <mvc:XMLView viewName="sapui5test.view.saps5"/>
+					  
 
+					
 					</content>
 				</Page>
 			</pages>

@@ -13,16 +13,6 @@
 				MessageToast.show("That doesn't do anything, does it?");
 			},
 
-			onInit : function () {
-				// set mock model
-
-				var sPath = 'data/data.json',
-				oModel = new JSONModel(sPath);
-
-				this.getView().setModel(oModel);
-				debugger;
-			},
-
 			onCallAPI : function () {
 
 				$.ajax({

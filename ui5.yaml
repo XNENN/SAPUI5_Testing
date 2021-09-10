@@ -22,3 +22,12 @@ server:
     configuration:
      port: 35729
      path: webapp
+  - name: ui5-middleware-route-proxy
+    afterMiddleware: compression
+    configuration:
+      debug: true
+      /sap: 
+        target: PROXY_TARGET
+        auth:
+          user: PROXY_USERNAME
+          pass: PROXY_PASSWORD

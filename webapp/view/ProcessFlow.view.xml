@@ -14,27 +14,27 @@
 			scrollable="false"
 			foldedCorners="true"
 			nodePress="onNodePress"
-			nodes="{/nodes}"
-			lanes="{/lanes}">
+			nodes="{processData>/nodes}"
+			lanes="{processData>/lanes}">
 			<nodes>
 				<ProcessFlowNode
-					laneId="{lane}"
-					nodeId="{id}"
-					title="{title}"
-					titleAbbreviation="{titleAbbreviation}"
-					children="{children}"
-					state="{state}"
-					stateText="{stateText}"
-					texts="{texts}"
-					highlighted="{highlighted}"
-					focused="{focused}" />
+					laneId="{processData>lane}"
+					nodeId="{processData>id}"
+					title="{processData>title}"
+					titleAbbreviation="{processData>titleAbbreviation}"
+					children="{processData>children}"
+					state="{processData>state}"
+					stateText="{processData>stateText}"
+					texts="{processData>texts}"
+					highlighted="{processData>highlighted}"
+					focused="{processData>focused}" />
 			</nodes>
 			<lanes>
 				<ProcessFlowLaneHeader
-					laneId="{id}"
-					iconSrc="{icon}"
-					text="{label}"
-					position="{position}" />
+					laneId="{processData>id}"
+					iconSrc="{processData>icon}"
+					text="{processData>label}"
+					position="{processData>position}" />
 			</lanes>
 		</ProcessFlow>
 	</m:Panel>

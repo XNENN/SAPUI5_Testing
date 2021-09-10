@@ -1,0 +1,34 @@
+<mvc:View
+	controllerName="sapui5test.controller.saps5"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+<Page title="OpenSAP – Developing with SAPUI5">
+	<IconTabBar
+		id="idTopLevelIconTabBar"
+		selectedKey="db"
+	>
+		<items>
+			<IconTabFilter
+				text="{i18n>dataBindingFilter}" key="db">
+				<content>
+					<List
+						headerText="{i18n>productListTitle}"
+						items="{/ProductSet}">
+						<items>
+							<ObjectListItem
+								title="{Name}"
+								number="{Price}"
+								intro="{ProductID}" />
+						</items>
+					</List>
+				</content>
+			</IconTabFilter>
+		</items>
+	</IconTabBar>
+</Page>
+
+</mvc:View>

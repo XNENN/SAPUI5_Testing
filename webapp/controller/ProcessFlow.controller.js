@@ -9,7 +9,7 @@ sap.ui.define(['sap/suite/ui/commons/library', 'sap/ui/core/mvc/Controller', 'sa
 
 			var sDataPath = "data/data.json";
 			var oModelPf1 = new JSONModel(sDataPath);
-			oView.setModel(oModelPf1);
+			oView.setModel(oModelPf1, "processData");
 			oModelPf1.attachRequestCompleted(this.oProcessFlow1.updateModel.bind(this.oProcessFlow1));
 		},
 
