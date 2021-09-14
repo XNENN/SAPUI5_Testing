@@ -1,1 +1,14 @@
-/* Enter your custom styles here */
+.myApp .myButton.sapMBtn {
+    margin-right: 0.125rem
+  }
+  
+  html[dir="rtl"] .myApp .myButton.sapMBtn {
+    margin-left: 0.125rem;
+    margin-right: 0 ;
+  }
+  #__button0-BDI-content {
+      color: red;
+  }
+  .myApp .myCustomText  {
+    font-weight: bold;
+  }
